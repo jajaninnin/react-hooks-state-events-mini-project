@@ -18,7 +18,6 @@ test("clicking the category button adds a class of 'selected' to the button", ()
   const allButton = screen.queryByRole("button", { name: "All" });
 
   fireEvent.click(codeButton);
-
   expect(codeButton.classList).toContain("selected");
   expect(allButton.classList).not.toContain("selected");
 });
